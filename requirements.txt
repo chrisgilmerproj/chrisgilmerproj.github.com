@@ -1,2 +1,4 @@
+Pygments==1.4
+docutils==0.8.1
 Markdown==2.1.1
 pelican==2.7.2
