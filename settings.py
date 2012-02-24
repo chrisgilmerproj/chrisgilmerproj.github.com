@@ -7,5 +7,5 @@ SITENAME = 'chrisgilmerproj'
 SOCIAL = (('twitter', 'http://twitter.com/chrisgilmerproj'),
           ('github', 'https://github.com/chrisgilmerproj'),)
 TAG_FEED = 'feeds/%s.atom.xml'
-THEME = 'bootstrap'
+THEME = 'notmyidea'
 #TWITTER_USERNAME = 'natantus'
