@@ -1,2 +1,0 @@
-#! /bin/bash
-pelican . -o . -s settings.py
