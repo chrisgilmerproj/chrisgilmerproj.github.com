@@ -26,8 +26,6 @@ textile_ext:   textile
 excerpt_separator: "\n\n"
 
 safe:        true
-watch:       false    # deprecated
-server:      false    # deprecated
 host:        0.0.0.0
 port:        4000
 baseurl:     /
