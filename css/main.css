@@ -79,20 +79,20 @@ ul.posts span {
 }
 
 .site .header h1.title a {
-  color: #a00;
+  color: #5C5858;
 }
 
 .site .header h1.title a:hover {
-  color: #000;
+  color: #728FCE;
 }
 
 .site .header a.extra {
-  color: #aaa;
+  color: #5C5858;
   margin-left: 1em;
 }
 
 .site .header a.extra:hover {
-  color: #000;
+  color: #728FCE;
 }
 
 .site .meta {
