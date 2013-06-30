@@ -3,6 +3,7 @@ layout: post
 title:  "Migrating to Jekyll"
 date:   2013-06-28 21:25:03
 categories: jekyll update
+comments: true
 ---
 
 I've decided to migrate my project blog to use [Jekyll][jekyll] and deploy with 
