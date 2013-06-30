@@ -1,0 +1,22 @@
+---
+layout: post
+title: Computer Vision Success!!
+tags:
+- computer vision
+- control system
+- open source
+- robots
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  ljID: '788'
+---
+Tonight I finally got my Pan and Tilt camera system working.  This is a system I started several weeks ago with a servo kit I bought online and some code that my friend Michael lent me.  It uses a USB Phidget to control the servos and OpenCV to tell them what to do.  Well, I got the code looking really pretty and then burnt out my Phidget on my nice aluminum Macbook Pro.  Good job.  So I had to wait for a replacement Phidget that showed up right in the middle of the move to my new apartment.  Needless to say the project got put on hold.
+
+The last couple nights, however, I've been really working hard on it.  With a little help from Michael I got the software to pan correctly but was having terrible luck with the tilt servo.  Lucky for me I am a mentor for FIRST.  My friend AJ at FIRST has put together these pan and tilt camera systems before and said I'd probably gotten my coordinate axes mixed up, so when I should have been subtracting my PID adjustment to the tilt motor I was instead adding it.  So home I went and sure enough I got it to work!
+
+Crazy that a little negative sign can make all the difference.  It is even pretty quick to center in on the correct image.  Image in this case being a blob that's colored the red of your skin.  But hey, it works.  Next up is to see if I can't streamline the code and then add in facial recognition.  Ideally I'd like it to find one face in a picture and follow it.  I don't think I'll aim for recognizing faces of individuals until much later, but this is a step in the right direction!
+
+I'm really very proud about this and I think I'll try and write another instructable soon so that I can share this success with others.

@@ -1,0 +1,32 @@
+---
+layout: post
+title: My Garden Tweets
+tags:
+- arduino
+- garden
+- python
+- twitter
+- xbee
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+  ljxp_comments: '0'
+  ljxp_privacy: '0'
+  bfa_ata_body_title_saved: '1'
+  bfa_ata_meta_title: ''
+  bfa_ata_meta_keywords: ''
+  bfa_ata_meta_description: ''
+  bfa_ata_body_title: ''
+  ljID: '808'
+---
+Yesterday I posted about wirelessly updating my arduino's software using my Xbee wireless adapters.  Today, I finally completed a project I've been working on for a couple months.  I now have a garden, with water and light controlled by an arduino, that tweets it's status every half hour to Twitter!  You can check out the feed by going over to my twitter test account <a title="Twitter Test Account" href="http://twitter.com/chrisgilmertest" target="_blank">@chrisgilmertest</a>.
+
+This was a huge breakthrough since I thought I'd have to do a lot more work than was actually required.  Turns out I can use the Xbee modules as a direct serial link and simply read text from the arduino.  I can then use <a title="Python.org" href="http://www.python.org" target="_blank">Python</a> and the <a title="PySerial" href="http://pyserial.sourceforge.net/" target="_blank">PySerial</a> library to parse the words into data for recording.  This data can also be sent over to Twitter using a twitter API, written in Python, that I downloaded from the <a title="Tweet-a-Watt" href="http://www.ladyada.net/make/tweetawatt/">Tweet-a-Watt</a> project.
+
+My next step is to send command to the garden from my computer.  Ideally I'd like to run the timer for lights and water from the computer and simply update the values on the arduino via serial.  It might be harder than I expect, but the payoff will be my ability to adjust what my garden is doing over the web.  That could lead to a whole host of other cool projects down the line.
+
+I want to end this post by saying that I wouldn't have started this project without <a title="Make Magazine" href="http://makezine.com/" target="_blank">Make Magazine</a>.  It was in Volume 18 of Make that I ran across both the Garduino project and the Tweet-a-Watt.  I'm so excited that I was able to bring those two projects together and have so much fun doing it at the same time.  I should also thank the authors of those two projects because I relied heavily on their work.
+
+If you're interested then check back here soon for more about how I did it.  I'm thinking of updating my wiki and posting an instructable to help other people interested in this project.

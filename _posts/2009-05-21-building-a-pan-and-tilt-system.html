@@ -1,0 +1,19 @@
+---
+layout: post
+title: Building a Pan and Tilt System
+tags:
+- computer vision
+- control system
+- robots
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  ljID: '780'
+---
+I'm in the process of building a <a href="http://wiki.chrisgilmer.net/index.php?title=Point-and-Find_Robot" target="_blank">robot project</a> and the critical piece is going to be the control of the pan and tilt camera system.  The point of the robot is to pick up objects that you point at.  It will use computer vision to detect a direction from your arm and hand, determine the location in the room, and go there.  Tall order?  Absolutely.  But we're starting small and that means getting the camera control system working.<a href="http://www.robotshop.us/lynxmotion-pan-and-tilt-kit-aluminium2.html"><img class="alignright" title="Lynxmotion Pan and Tilt Kit" src="http://www.lynxmotion.com/images/Products/Full/bpt01.jpg" alt="" width="384" height="288" /></a>
+
+Mike has already started with this project by purchasing a web cam, a <a href="http://www.robotshop.us/lynxmotion-pan-and-tilt-kit-aluminium2.html" target="_blank">Pan/Tilt servo kit</a>, and a <a href="http://www.robotshop.us/phidgets-8-servo-controller.html" target="_blank">Phidget Servo Controller</a>.  Using <a href="http://opencv.willowgarage.com/wiki/Welcome" target="_blank">OpenCV</a> we will get images from the camera, process them on the computer, and send commands to the Phidget controller.  Mike already started some of the computer vision software and it will be my job to build a control system that gracefully handles the control of the camera.  Since my masters is in control systems I think this will be a fun challenge for me.
+
+As we build this project I'm going to continue to write more about it here on my blog.  If you're interested in the construction of the Pan and Tilt servo system you can follow the <a href="http://www.lynxmotion.com/images/html/build16a.htm" target="_blank">instructions at Lynxmotion</a>.  Check out <a href="http://wiki.chrisgilmer.net/" target="_blank">my project wiki</a> for more detailed information about parts and resources.  I'm looking forward to the fun and challenging project ahead!

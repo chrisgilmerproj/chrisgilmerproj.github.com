@@ -1,0 +1,31 @@
+---
+layout: post
+title: MAMP and Django
+tags:
+- django
+- python
+- website
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  bfa_ata_body_title_saved: '1'
+  bfa_ata_meta_title: ''
+  bfa_ata_meta_keywords: ''
+  bfa_ata_meta_description: ''
+  bfa_ata_body_title: MAMP and Django
+  ljID: '821'
+---
+Fortunately for me my work and my personal hobbies sometimes coincide in unexpected ways.  At work I've recently completed a year long project with altimetry data and am moving on to work with the Mars Science Laboratory.  While I gear up to do that work I have a hand full of projects that I think would be better served with web databases than the old Excel spreadsheet paradigm that people seem to love so much.  This brought me to a great crossroads.  I could quickly build and deploy websites to handle my number crunching work, do it faster than compiling even more spreadsheets, and in the end give a whole new tool to my project.  I liked this idea so I've begun to pursue it.<!--more-->
+
+I have recently been involved in a love affair with Django.  It's robust, responsive, and allows me to quickly build things that integrate with existing python scripts that I have floating around.  The problem was that I'm used to doing my development with an actual MySQL database on hand, not the sqllite3 that comes preinstalled with python.  Solution? Install a MAMP Server stack on my laptop so I could develop like I would deploy.
+
+Deploying a MAMP Server and serving up Django websites provided a number of challenges.  Thankfully most of the resources I needed were online and could be handled by MacPorts.  After a day and a half of hard work I've managed to do it and document the results in two pages on my wiki:
+<ul>
+	<li><a title="MAMP Server" href="http://wiki.chrisgilmer.net/index.php?title=MAMP_Server">Building a MAMP Server</a></li>
+	<li><a title="Integrating Django with Apache and mod_wsgi" href="http://wiki.chrisgilmer.net/index.php?title=Django_with_Apache_and_mod_wsgi">Integrating Django with Apache and mod_wsgi</a></li>
+</ul>
+I thought I'd write all of my experience up in one place so that others could use the same information in the future.  The only thing I wasn't able to figure out was how to serve up multiple Django websites on my computer, though that's not terribly important to me at this juncture.
+
+I'm excited that I'm going to get a chance to do my work using Django.  I'm even confident that my project might take my project and deploy it for the project and maybe the lab to use.  I guess we'll see.  I've got a lot of work ahead but I think I'll manage to get it done in time.

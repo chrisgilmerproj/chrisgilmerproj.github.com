@@ -1,0 +1,43 @@
+---
+layout: post
+title: Driving ATHLETE
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  ljID: '823'
+  _wp_old_slug: ''
+---
+<a href="http://blog.chrisgilmer.net/wp-content/uploads/2010/09/IMG_3129-e1285113018652.jpg"><img class="alignright size-medium wp-image-280" title="Chris with WiiNunchuk" src="http://blog.chrisgilmer.net/wp-content/uploads/2010/09/IMG_3129-e1285113018652-225x300.jpg" alt="" width="225" height="300" /></a>
+
+One of the best projects I had the chance to work on at the Jet Propulsion Laboratory this last year was a small driving remote for their robot <a title="ATHLETE Rover" href="http://www-robotics.jpl.nasa.gov/systems/system.cfm?System=11" target="_blank">ATHLETE</a>.  I thought I'd write up a little post about what I did, why I thought it was cool, and to thank the people involved.
+
+Back in November of 2009 I started working with a couple friends to build a small kit for the <a title="iRobot Roomba" href="http://www.irobot.com/" target="_blank">iRobot Roomba</a>.  At the same time I happened to see a lecture at JPL by Dr. Jeff Norris and was inspired to use a gaming controller for my work at home.  My friends and I chose the Wii Nunchuk as the interface device and began work on a wireless remote system.  Our hope was to build a kit that someone could purchase, build and then easily snap the parts to their Roomba and Nunchuk and be off and running the device around their living room.
+
+My friends and I got through most of the hard work for the system by March when I happened to be at another lecture with Dr. Norris.  After the talk I decided to say thanks by way of telling him how he inspired me to use a gaming controller to drive my Roomba.  To my surprise and delight he asked that I show him a demo--in fact, he and his team been looking for an alternative for driving their robot ATHLETE short distances during testing and my solution might be what they were after.
+
+That night I spent a couple hours building a small breadboard demo using the Nunchuk, a couple arduinos, xbees, and some LEDs.  I brought it in the next day to show it off, just pleased as punch to show what I'd done.  Uncharacteristically, the demo went off without a hitch.  Later that week Dr. Norris got me a charge number for the project for 40 hours of work and $1K in hardware costs.
+
+What I ended up building was a scaled back version of my original controller.  The ground ops team needed an interface between the Wii Nunchuk and the hand held computer they'd use during testing and some Java code they could use to read the output.  That was easy enough and I got to work on it.
+
+For the hardware I selected products I could get directly from my favorite supplier <a title="SparkFun" href="http://www.SparkFun.com" target="_blank">SparkFun</a>: an <a title="Arduino Pro Mini 328" href="http://www.sparkfun.com/commerce/product_info.php?products_id=9218" target="_blank">Arduino pro mini 328</a>, an <a title="FTDI Breakout Board" href="http://www.sparkfun.com/commerce/product_info.php?products_id=9115" target="_blank">FTDI breakout board</a>,  some <a title="Right-Angle Break Away Headers" href="http://www.sparkfun.com/commerce/product_info.php?products_id=553" target="_blank">right-angle break away headers</a>, and a <a title="Project Enclosure" href="http://www.sparkfun.com/commerce/product_info.php?products_id=138" target="_blank">small project enclosure</a>.  I also needed a miniB USB cable to connect it to the computer, not to mention the Wii Nunchuk.
+
+For the software I was lucky to find a great resource in Tod Kurt and his <a title="WiiChuck Adapter" href="http://todbot.com/blog/2008/02/18/wiichuck-wii-nunchuck-adapter-available/" target="_blank">blog on the "WiiChuck"</a>.  When prototyping my home project I'd actually purchased his I2C <a title="WiiChuck Adapter" href="http://www.sparkfun.com/commerce/product_info.php?products_id=9281" target="_blank">WiiChuck Adapter</a> from SparkFun.  Then I reworked his open-source code to make additions for my own <a title="WiiChuck Arduino Library" href="http://svn.chrisgilmer.net/viewvc.cgi/project/anomalyrobotics/arduino/libraries/WiiChuck/" target="_blank">WiiChuck Arduino Library</a>.  I used this library in the <a title="Nunchuk Code" href="http://svn.chrisgilmer.net/viewvc.cgi/project/anomalyrobotics/arduino/nunchuck/" target="_blank">Nunchuk code for the adapter</a>.  I absolutely couldn't have done the project without the head start his work gave me.
+
+The project finally came together in the summer.  It probably took so long because we all worked other missions full time, but we were happy to see it complete.  It was also done just in time for summer testing and I got a great video of the guys using my device out on the Arroyo near JPL:
+
+httpv://www.youtube.com/watch?v=Sz024ENb3ks
+
+If you look closely you can see the driver with the device.  He's at the beginning of the film on the left.
+
+I also got some great pictures of the device itself that you can see in my <a title="Driving ATHLETE Flickr Stream" href="http://www.flickr.com/photos/chrisgilmerproj/sets/72157625007383140/" target="_blank">Flickr Stream "Driving ATHLETE"</a>.
+
+My device and ATHLETE were also<a title="ATHLETE in the SGV Tribune" href="http://sgvtribune.mycapture.com/mycapture/folder.asp?event=1053802&amp;CategoryID=0" target="_blank"> featured in the San Gabrial Valley Tribune</a> in August.  You can see Julie with the WiiChuck device in several of the photos they took.
+
+I forgot to mention that when May rolled around I attended the <a title="Maker Faire" href="http://www.MakerFaire.com" target="_blank">Bay Area Maker Faire</a> in San Mateo, CA.  In the afternoon I actually stopped by the tent with all the kits and spotted both Nathan Seidle and Tod Kurt!  I went over and talked to both of them, told them about the project, and basically gushed about how much I owed both of them for their work.  It was a proud moment for me.
+
+I've also got to thank several key people that got this project done.  First, Mike and Will, the two guys I worked with in my original project.  I also want to thank Dr. Norris for giving me the opportunity to do the project and my mentor Dr. Desai for encouraging me.  Finally, the ground ops team for ATHLETE, David and Lucy, were just fantastic and I couldn't have worked with a better team to get things done.
+
+I'm always going to remember this as one of the best projects I ever did for JPL and I hope I get another opportunity like it in the future.

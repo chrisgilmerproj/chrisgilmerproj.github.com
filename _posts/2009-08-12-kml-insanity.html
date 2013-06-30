@@ -1,0 +1,22 @@
+---
+layout: post
+title: KML Insanity!
+tags:
+- KML
+- maps
+- Theta Tau
+- XML
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  ljID: '787'
+---
+For the last two weeks I've been engrossed in KML files.  I love the idea of generating geo-specific data to share with others.  In my case it was data concerning my professional engineering fraternity, <a title="Theta Tau" href="http://www.thetatau.org/" target="_blank">Theta Tau</a>.  I'm helping to launch a new website and I want to take advantages of services like Google Maps to keep our fraternity map up to date and interactive for our members.
+
+To do this project I first found data from the US Census Bureau in a text format I could parse with Python.  Then I made a text file of all the fraternity specifi data I wanted to display.  The life saver was something called<a title="Element Tree" href="http://effbot.org/zone/element-index.htm" target="_blank"> Element Tree</a> for Python.  I understand that it's a standard feature in Python 2.6, but I still installed it using <a title="MacPorts" href="http://www.macports.org/" target="_blank">MacPorts</a> (which convinces me every day to switch to a mac).
+
+Once I had the Element Tree imported in my Python program I found that generating the KML file was a snap.  The most difficult part was actually locating the image files that Google uses for the pins in the map.  And while I have a friend helping me develop some customized pins, I like the look and feel of the Google ones and still prefer them.
+
+Will I do more KML work in the future?  Probably.  It was such a snap to do and the outcome was so rewarding I think I'll definitely employ this somewhere in the future.  For now it was a project well done and an interesting lesson in XML.

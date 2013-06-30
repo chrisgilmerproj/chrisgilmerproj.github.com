@@ -1,0 +1,25 @@
+---
+layout: post
+title: Coding a Pan and Tilt Camera System
+tags:
+- computer vision
+- control system
+- robots
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  ljID: '785'
+---
+The last couple weeks since I built my Arduino Mothbot I've been working on a Pan and Tilt camera system.  The purpose of this project is two fold, the first being to teach me about computer vision and the second so that I can build a robot that uses computer vision.
+
+Fortunately I got a lot of good help starting this project thanks to my friend Mike.  Mike and I have been collaborating on project ideas for a while now and he turned me on to <a title="Phidgets" href="http://www.phidgets.com/" target="_blank">Phidgets</a>.  These are USB controllers that I can program in a number of different languages.  For my purposes I decided to get a <a title="Phidget Servo" href="http://www.phidgets.com/products.php?category=11&amp;product_id=1061" target="_blank">Phidget Advanced Servo 8-Motor (1061)</a> model.  This would allow me to simultaneously control up to 8 different servo motors for a robot project, meaning I could do motors, a pan and tilt vision system, and even something like an arm while having plenty of room to spare!
+
+The next step was to find an open source computer vision software to work with.  The logical choice here was <a title="OpenCV" href="http://opencv.willowgarage.com/wiki/" target="_blank">OpenCV</a>, a community driven project with lots of available information online.  Installing OpenCV turned out to be a lot more difficult than I had imagined.  I chose to do my coding work on an Apple Macbook Pro and found that my installation of the OpenCV libraries would only allow me to compile my classes, not executables.  Eventually I discovered the OpenCV Framework developed for Apple computers and once employed I was on my way.
+
+I spent the better part of my last couple weekends coding up some simple software.  It might have taken me longer, but my friend Mike passed along some code he'd gotten to work on his Windows machine and so I at least had a good starting point to try for blob recognition.  When everything was compiling yestereday I pulled out my brand new Phidget, plugged it in, and got to work seeing if I could exercise the Pan and Tilt servos.  But, as fate would have it, this was not to be so.
+
+After plugging in the Phidget I made the mistake of laying it down, powered, on my laptop because I hadn't given myself enough space to work.  If you know Macbook Pros then you know they are aluminum.  I must have shorted the power to another sensitive piece of the Phidget because it simply quit working.  I haven't been able to bring it up on my computer since and thus I learned a very expensive lesson about having adequate work space for my electronics.
+
+I plan to buy another Phidget soon.  I spent the afternoon double checking my code so I'm pretty confident that it will work when I get the new one.  I just can't wait to get it moving and then to see if I can apply some of my control systems learning to design better tracking algorithms for the thing.  I'm still pretty excited though and I'll probably post another Instructable with everything I've done in the next couple weeks.

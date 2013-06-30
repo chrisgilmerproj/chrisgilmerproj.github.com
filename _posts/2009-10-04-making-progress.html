@@ -1,0 +1,32 @@
+---
+layout: post
+title: Making Progress
+tags:
+- arduino
+- control system
+- garden
+- Projects
+- xbee
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  ljxp_comments: '0'
+  ljxp_privacy: '0'
+  bfa_ata_body_title_saved: '1'
+  bfa_ata_meta_title: ''
+  bfa_ata_meta_keywords: ''
+  bfa_ata_meta_description: ''
+  bfa_ata_body_title: ''
+  ljID: '794'
+---
+This weekend I made some serious progress towards my <a title="Garduino + Tweet-a-Watt" href="http://blog.chrisgilmer.net/2009/09/24/garduino-tweet-a-watt/" target="_blank">Garduino + Tweet-a-Watt</a> project.  All my parts finally arrived from <a title="Jameco" href="http://www.jameco.com" target="_blank">Jameco</a> and <a title="Adafruit Industries" href="http://www.adafruit.com" target="_blank">Adafruit Industries</a>.  I spent most of Saturday and Sunday <a title="Xbee Module Soldering Instructions" href="http://www.ladyada.net/make/xbee/solder.html" target="_blank">soldering the Xbee modules</a> together (I bought a receiver and transmitter) and also the <a title="Arduino Prototype Shield" href="http://www.ladyada.net/make/pshield/" target="_blank">arduino prototype shield</a>.  With those completed I went to work on the sensor network for my planter.
+
+The planter sensor network consists of a thermistor, a photosensor, and a soil moisture sensor.  These are all essentially different types of resistors.  The first tells the temperature outside, the second can report on the amount of light being gathered, and the soil moisture sensor will tell me if I need to water my plants.  I'm also going to include two LEDs.  One will light up if the temperature gets too hot or cold.  The other will tell me if the soil needs to be watered.  I didn't take a picture of the completed sensor but I'll try to get one up soon.
+
+I then went out on a journey to <a title="Pacific Coast Hydroponics" href="http://www.pacificcoasthydro.com/" target="_blank">Pacific Coast Hydroponics</a> to pick up a grow light.  I was able to get a two foot, <a title="T5 Grow Light" href="http://www.pchydro.com/grow-lights-fluorescents-c-5_9/t5-single-24-fixture-p-2134" target="_blank">T5 full spectrum fluorescent</a> light for about $30.  I figured that was a pretty good deal.  Right now I've rigged the light up above my basil and mint plants.  What I plan to do is hook both the light and the electric water pump into relays.  Then I'll have my arduino tell them when to turn on and off.  The only problem is that I haven't yet figured a good way to isolate my relays safely so I don't cause any electrical problems in my house.
+
+After I get the sensor hooked up to the arduino and the relays working properly I'm going to hook up the xbee and try to record the state of my plants.  At first I'll probably just have my computer gather a report about a day's cycle, then I plan to see how I can put it online so I can watch it remotely.  The nice thing is I'll be able to remotely <a title="Arduino/Xbee Remote Programming" href="http://www.ladyada.net/make/xbee/arduino.html" target="_blank">reprogram my arduino with the xbee from my home computer</a>, so if I need to adjust the settings it won't be that hard.
+
+This was a lot of work this weekend and hopefully it's set me up to do a little more over the week without too much trouble.  I think this project is moving along quite well and I hope to report more good things soon.

@@ -1,0 +1,30 @@
+---
+layout: post
+title: Computer controlled Garduino
+tags:
+- arduino
+- garden
+- python
+- twitter
+- xbee
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  ljxp_comments: '0'
+  ljxp_privacy: '0'
+  bfa_ata_body_title_saved: '1'
+  bfa_ata_meta_title: ''
+  bfa_ata_meta_keywords: ''
+  bfa_ata_meta_description: ''
+  bfa_ata_body_title: ''
+  ljID: '809'
+---
+My excitement seems to know no bounds when it comes to the things I've been able to do with my Gardiuno this weekend.  I've felt since I got my garden up and running that it's one fatal flaw was the internal date and time library.  I had set up a rudimentary system that turned on the light for a set number of seconds each day.  This turned out to be a problem as I tweaked the code on the arduino because every time I reset the controller I also reset the internal clock.
+
+Since I want to light my garden mostly at night and during the day when I'm at work I thought I'd need a different solution so I wouldn't have to reset my arduino before I went to bed.  What came to mind was a great instructable by the people at <a title="oomlout" href="http://oomlout.com/" target="_blank">oomlout </a>that <a title="SERB" href="http://www.instructables.com/id/How_to_Make_an_Arduino_Controlled_Servo_Robot_SER/" target="_blank">controlled an arduino with serial communication</a>.  I'd previously used this instructable to get my <a title="Mothbot" href="http://blog.chrisgilmer.net/2009/06/15/featured-instructable/" target="_blank">Mothbot</a> up and running.  This time I took a lesson from the instructable about serial communications and got to work modifying my arduino code and my Python script.
+
+I now have set up my Garduino to receive commands from my computer over the Xbee.  Then the Garduino determines if the light should be on or off, will reset the pump safety counter, and then manage the garden before sending back the sensor values.  My computer then reads the sensor values, tweets if it's been five minutes, and starts the whole thing over again.  This way the garden light cycle is dependent upon the script on my computer, not on an internal clock that caused me so many other problems.
+
+I'm really moving now that I've got my project off the ground and connected.  I can't wait to see what I do with it next!
