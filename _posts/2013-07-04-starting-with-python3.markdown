@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Starting with Python 3"
-date:   2013-06-28 21:25:03
+date:   2013-07-04 10:30:00
 categories: python pip virtualenv
 comments: true
 ---
