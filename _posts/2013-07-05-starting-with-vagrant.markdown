@@ -2,7 +2,7 @@
 layout: post
 title:  "Starting with Vagrant"
 date:   2013-07-05 09:00:00
-categories: vagrant django apache
+categories: vagrant apache
 comments: true
 ---
 
@@ -88,7 +88,7 @@ apt-get install -y apache2 git make postgresql
 echo
 echo "Configuring postgres ..."
 sudo -u postgres psql -e -c "CREATE USER vagrant WITH PASSWORD 'vagrant';"
-sudo -u postgres psql -e -c "CREATE DATABASE vagrant;"
+sudo -u postgres psql -e -c "CREATE DATABASE vagrant ENCODING 'UTF-8';"
 sudo -u postgres psql -e -c "GRANT ALL PRIVILEGES ON DATABASE vagrant TO vagrant;"
 
 ##
