@@ -61,7 +61,7 @@ I: Mounting /var/cache/pbuilder/result
 I: policy-rc.d already exists
 I: Obtaining the cached apt archive contents
 I: entering the shell
-File extracted to: /archive/pbuilder/squeeze/5590
+File extracted to: /srv/pbuilder/squeeze/5590
 
 W: no hooks of type F found -- ignoring
 root@tarbox:/# logout
@@ -71,7 +71,7 @@ I: unmounting /var/cache/pbuilder/ccache filesystem
 I: unmounting dev/pts filesystem
 I: unmounting proc filesystem
 I: cleaning the build env 
-I: removing directory /archive/pbuilder/squeeze/5590 and its subdirectories
+I: removing directory /srv/pbuilder/squeeze/5590 and its subdirectories
 {% endhighlight %}
 
 Clearly pbuilder wasn't mounting /dev/shm.  So I read the man page and tried this:
@@ -90,7 +90,7 @@ I: Mounting /var/cache/pbuilder/result
 I: policy-rc.d already exists
 I: Obtaining the cached apt archive contents
 I: entering the shell
-File extracted to: /archive/pbuilder/squeeze/5590
+File extracted to: /srv/pbuilder/squeeze/5590
 
 W: no hooks of type F found -- ignoring
 root@tarbox:/# logout
@@ -101,7 +101,7 @@ I: unmounting /dev/shm filesystem
 I: unmounting dev/pts filesystem
 I: unmounting proc filesystem
 I: cleaning the build env 
-I: removing directory /archive/pbuilder/squeeze/5590 and its subdirectories
+I: removing directory /srv/pbuilder/squeeze/5590 and its subdirectories
 {% endhighlight %}
 
 This time /dev/shm was mounted and unmounted correctly.  With that in mind I
